@@ -33,7 +33,7 @@ class Solution {
 ```
 
 
-## Leetcode POTD -- Rotate String 
+## 🔥 Leetcode POTD -- Rotate String 
 
 To check if goal is a rotation of s, the correct approach is to use the following insight:
 
@@ -50,3 +50,34 @@ if(s.length() != goal.length()) return false;
         }
         return false; 
 ```
+
+
+## LinkedList is Even ? 🥲 -- GFG Streak 
+
+Given a linked list, your task is to complete the function isLengthEven() which contains the head of the linked list, and check whether the length of the linked list is even or not.
+
+
+
+ Return true if it is even, otherwise false.
+
+
+
+ ![LinkedList](https://media.geeksforgeeks.org/wp-content/uploads/20220816144425/LLdrawio.png)
+
+ ```java
+class Solution {
+    public boolean isLengthEven(Node head) {
+        // code here
+        
+        // each Node has to be Accessed
+        Node current = head;
+        int cnt = 0; 
+        while(current != null){
+            cnt++;
+            current = current.next;
+        }
+        
+        return cnt%2==0;
+    }
+}
+ ```
