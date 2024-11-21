@@ -1,10 +1,14 @@
 # AWT - Abstract Windowin Toolkit
-
+- Java AWT is an API/packages to develope GUI or window based applicaiton in java. 
+- Applications built by AWT are platform dependent meaning they will be displayed according to the view of  operating system.
+- AWT packages provides classes for the AWT API like TextArea, Layout, Label, TextField, RadioButton, CheckBox, Choice, List, etc.
 - It's a package in Java used for GUI.  It's a part of Java Standard Edition (SE) and is used for creating desktop applications.
 
 ![AWT](https://images.javatpoint.com/java/awt/images/java-awt.png)
 
 - Object class is the root class.
+- The Object class  is the daddy class of all classes in java by default. 
+- Every class in java is a child of Object class.
 
 -  It provides a lot of classes and interfaces for creating GUI components.
 
@@ -60,38 +64,41 @@ Frame
 import java.awt.Color;
 import java.awt.Frame;
 import java.awt.Label;
+public class PackageAWT{
 
-Frame f = new Frame();
-f.setSize(width:450, height:450);
-f.setTitle(title:"My First GUI");
-f.setBackground(Color.BLUE);
-f.setLocation(x:150,y:150)
-F.setVisible(b:true);
+	Frame f = new Frame();
+	f.setSize(width:450, height:450);
+	f.setTitle(title:"My First GUI");
+	f.setBackground(Color.BLUE);
+	f.setLocation(x:150,y:150)
+	F.setVisible(b:true);
+	
+	Label l = new  Label("Enter your Name");
+	// we have to establish relation between Frame and Label
+	// This is called HAS A relationship
 
-Label l = new  Label("Enter your Name");
-// we have to establish relation between Frame and Label
-// This is called HAS A relationship
+	f.add(l);
+	
+	TextField tf = new TextField();
+	f.add(tf);
+	// Problem is if add components like this it will take entire window 
+	Button b = new Button("Submit");
+	f.add(b);
+	// One solution is to add a Layout
 
-f.add(l);
-
-TextField tf = new TextField();
-f.add(tf);
-// Problem is if add components like this it will take entire window 
-Button b = new Button("Submit");
-f.add(b);
-// One solution is to add a Layout
-
-
+}
 ```
-
+The above code will give us a problem
 
 ```java
+
+public class packageAWT{
 Frame f = new Frame();
 f.setSize(width:450, height:450);
 f.setTitle(title:"My First GUI");
 f.setBackground(Color.BLUE);
 f.setLocation(x:150,y:150)
-F.setVisible(b:true);
+f.setVisible(b:true);
 f.setLayout(new FlowLayout());
 
 Label l = new  Label("Enter your Name");
@@ -111,6 +118,7 @@ list.add("Java";)
 list.add("Python")
 list.add("CPP")
 list.add("Python")
+}
 ```
 
 ## Java.awt.event Package in Java 
@@ -133,7 +141,7 @@ list.add("Python")
 
 ## Email Validator Program in Java
 ![email-program](./Screenshot%202024-11-04%20092100.png)
-![email-logic](./Screenshot%202024-11-04%20092824.png)
+![email-logic](Screenshot%202024-11-04%20092824.png)
 
 ```java
 import java.awt.*;
