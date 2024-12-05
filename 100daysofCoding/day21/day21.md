@@ -4,7 +4,7 @@ Given an array of integers nums which is sorted in ascending order, and an integ
 
 You must write an algorithm with O(log n) runtime complexity.
 
-
+### Iterative Code
 ```java 
 class Solution {
     public int search(int[] nums, int target) {
@@ -31,6 +31,9 @@ class Solution {
     }
 }
 ```
+
+### Recursive Code
+
 
 
 ## 🔥 Leetcode POTD -- Rotate String 
