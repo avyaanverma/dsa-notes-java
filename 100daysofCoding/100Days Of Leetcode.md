@@ -1,4 +1,8 @@
 https://30dayscoding.com/motivation
+
+
+
+
 ~~day 20 - find lucky integer in array [[day20]]~~ 
 ~~day 21 - binary search [[100daysofCoding/day22/day22|day22]]~~
 ~~day 22 - find first and last position of element in sorted array [[day23]]~~
